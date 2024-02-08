@@ -1,6 +1,7 @@
 
 body{
   background-color: white;
+ 
 }
 
 
@@ -9,16 +10,24 @@ body{
     top: 0%;
     left: 0%;
     width: 100%;
+    padding: 1em;
     background-color: slategray;   
+    overflow: hidden;
 }
 
-.header > h2{
-
-    align-self: center;
-    
+.header > a{
+    float: left;
+    color: black;
     text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    border-radius: 1em;
+
+    margin-right: 9.2%;
+    margin-left: 10%;
     
 }
+
 
 .flex_container{
     display: flex;
@@ -27,12 +36,20 @@ body{
 
 
 .banner > img{
-    width: 100%;
-   ;
+    width: 85%;
+    justify-self: center;
+    align-self: center;
     object-fit: cover;
     background-size: cover;
+    margin-top: 1em;
     left: 0%;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
 }
+
 
 
 
@@ -43,7 +60,7 @@ div.gallery {
   }
   
   div.gallery:hover {
-    border: solid #D90429;
+    border: 0.3em solid white;
   }
   
   div.gallery img {
@@ -86,20 +103,109 @@ div.gallery {
   }
 
   .images{
-    display: flex;
-    margin: 1rem auto;
+    
+    margin: 1rem 10vh;
     align-items: center;
     justify-content: center;
   }
 
-  .black_dots > img{
-    z-index: -1;
-    
-    position: absolute;
+  .Litt_om_meg > h1{
+    z-index: 2;
+    color: white;
+    text-align: center;
+    font-size: 500%;
 
+    margin-top: 10%;
+  }
+
+  .Litt_om_meg > p{
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+
+  html{
+    scroll-behavior: smooth;
+  }
+
+
+
+
+  .row {
+    margin: 8px -16px;
+  }
+  
+
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+
+    .black_dots > img{
+    z-index: -2;
+  
+    position: absolute;
+    width: 100%;
     top: 0%;
     left: 0%;
 
   }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+    .black_dots{
+
+      width: 100%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 200%;
+    }
+    .black_dots{
+      height: 5000%;
+    }
+  }
 
 
+  .small{
+    object-fit: cover;
+    min-height: 50vh;
+    max-height: 50vh;
+
+  }
+  
+  .content{
+    margin: 2vh;
+  }
+
+  .content:hover{
+    z-index: 5;
+    outline: white solid 1vh;
+  }
+
+
+  .dev_prosjekt > h1{
+    color: blue;
+    text-align: center;
+    margin-top: 120vh;
+  }
