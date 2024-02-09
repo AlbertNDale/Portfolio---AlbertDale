@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="main_page.css">
 </head>
 <body>
-    
+  <section class="page">
+
     <div class="header">
-        <a href="">Lorem</a>
-        <a href="">Ipsum</a>
-        <a href="">BlaBla</a>
-        <a href="">BlahBlah</a>
-    </div>
+        <section class="hidden_mobile">
+        <div id="hoverable" class="header-left">
+            <a href="/Kunst_galleri.html">Kunst</a>
+            <a href="#om_meg_anchor">Om Meg</a> 
+          </div>
+        </section>
+        <a href="#banner" class="logo"><img id="icon" src="/Kunst Bilder/Icon 2.png" alt=""></a>
+        <section class="hidden_mobile">
+        <div id="hoverable" class="header-right">
+          <a  href="#programmering_anchor">Dev prosjekt</a>
+          <a href="/linkpage/LinkPage/Link_page.html">Links</a>
+          
+        </div>
+        </section>
+      </div>
 
-    
-    <div class="banner"><img src="/Kunst Bilder/header.png" alt=""></div>
-
+    <section class="fadeInUp-animation">
+    <div id="banner" class="banner"><img src="/Kunst Bilder/header.png" alt=""></div>
+    </section>
 <section class="images">
 
         <div class="row">
         <div class="column">
           <div class="content">
-              
+
               <a href="/Kunst_galleri.html"><img class="small" src="/Kunst Bilder/Lycan.jpg" alt="RoR Commando" style="width:100%"></a>
-  
+
           </div>
         </div>
   
@@ -40,7 +51,10 @@
               <a href="#programmering_anchor"><video id="video" class="small" src="/Kunst Bilder/video/platformer - Thumbnail.mp4" alt="Gobo Knight" style="width:100%"></a>
           </div>
         </div>
-           <div class="black_dots"> <img src="Kunst Bilder/black dots.png" alt=""></div>
+           <div class="black_dots">
+            <img id="higherBG" src="/Kunst Bilder/black box.png" alt="">
+             <img id="lowerBG" src="Kunst Bilder/black dots.png" alt="">
+            </div>
 </section>
 
 
@@ -49,7 +63,7 @@
 
     <div id="om_meg_anchor"></div>
 
-    <div class="Litt_om_meg">
+        <div class="Litt_om_meg">
         <H1>Om Meg</H1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Aperiam a autem nisi eum. Fugit explicabo, alias omnis similique debitis ad itaque.
@@ -68,16 +82,38 @@
 
 
 
+
     <div id = "programmering_anchor">1</div>
     <div class="dev_prosjekt">
         <h1>Developer prosjekt</h1>
+
+        <div class="row">
+
+            <div class="column">
+                <div class="content">
+                    <a href=""><img class="small" src="/Kunst Bilder/programmering/Godot-Platformer-Template_thumbnail.gif" alt="Gobo Knight" style="width:100%"></a>
+                </div>
+              </div>
+          <div class="column">
+            <div class="content">
+                <a href=""><img class="small" src="/Kunst Bilder/WIP - Thumbnail.jpg" alt="Gobo Knight" style="width:100%"></a>
+            </div>
+          </div>
+    
+          <div class="column">
+            <div class="content">
+                <a href=""><img class="small" src="/Kunst Bilder/WIP - Thumbnail.jpg" alt="Gobo Knight" style="width:100%"></a>
+            </div>
+          </div>
+    
+        </div>
 
     </div>
         
 
 
     
- 
+ </section>  
     
 
       <div class="clearfix"></div>
